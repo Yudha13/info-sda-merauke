@@ -3,7 +3,7 @@
 Selamat datang di proyek **Info SDA Merauke**!  
 Website ini menyajikan data dan informasi seputar hasil panen, sumber daya alam, dan distribusinya di wilayah Merauke, Papua Selatan.
 
-> Proyek ini dibuat dengan penuh semangat pakai **PHP native** tanpa framework ribet — langsung to the point!
+> Proyek ini dibuat dengan **PHP native** tanpa framework
 
 ---
 
@@ -67,5 +67,4 @@ Pull request dan feedback sangat welcome!
 ---
 
 ## 🇮🇩 Catatan
-
-Merauke punya potensi luar biasa. 
+............................
