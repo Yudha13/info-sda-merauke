@@ -1,0 +1,107 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.dashboard {
+  display: flex;
+  justify-content: space-around; /* Menyebarkan dashboard-card dengan jarak yang sama */
+  padding: 80px;
+}
+
+.dashboard-card {
+  background-color: #dcd7d7;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  display: flex; /* Mengatur gambar dan teks dalam satu baris */
+  align-items: center; /* Memastikan gambar dan teks sejajar vertikal */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px; /* Jarak antara gambar dan teks */
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column; /* Membuat teks bertumpuk atas-bawah */
+  justify-content: flex-start;
+}
+
+.dashboard-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.dashboard-card p {
+  font-size: 1.2rem;
+  color: #27b735;
+  margin: 10px 0 0 0; /* Memberikan jarak antara judul dan teks */
+}
+
+.logos {
+  width: 50px; /* mengubah ukuran gambar */
+  height: 50px; /* Menjaga proporsi gambar */
+  margin-right: 10px; /* Memberikan jarak kanan */
+}
+
+.text-content {
+  display: flex; /* Membuat flexbox untuk konten teks */
+  flex-direction: column; /* Mengatur teks agar posisinya vertikal (atas-bawah) */
+  justify-content: flex-start; /* Menyusun teks dari atas */
+}
+
+.isi_text h3,
+.isi_text p {
+  margin: 0; /* Menghilangkan margin default */
+  padding: 5px 0; /* Memberikan sedikit padding agar tidak terlalu rapat */
+}
+
+/* top daerah tabel */
+.toptop {
+  width: 619px;
+  flex-direction: column;
+  background-color: #dcd7d7;
+  margin-left: 130px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+h3 {
+  margin-left: 150px;
+}
+.scrollable-table {
+  width: 619px;
+  max-height: 300px; /* Batasi tinggi tabel */
+  overflow-y: scroll; /* Tambahkan scroll vertikal */
+  background-color: #fff;
+}
+
+.scrollable-table table {
+  padding-top: 10px;
+  width: 600px;
+  border-collapse: collapse;
+}
+
+.scrollable-table th,
+.scrollable-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.scrollable-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.scrollable-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.scrollable-table thead {
+  position: sticky;
+  top: 0;
+  background-color: #f4f4f4;
+  z-index: 1;
+}

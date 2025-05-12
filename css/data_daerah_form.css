@@ -1,0 +1,143 @@
+/* Style untuk keseluruhan body */
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 80px;
+  background-color: #f4f4f4;
+}
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Mengatur lebar tabel secara keseluruhan */
+.data-daerah-table {
+  width: 100%; /* Atur lebar tabel agar sesuai dengan container */
+  border-collapse: collapse; /* Menghilangkan jarak antar border */
+}
+
+/* Mengatur lebar kolom secara spesifik */
+.data-daerah-table th,
+.data-daerah-table td {
+  padding: 180px;
+  text-align: center; /* Menyelaraskan teks ke kiri */
+}
+
+.data-daerah-table th:nth-child(1),
+.data-daerah-table td:nth-child(1) {
+  width: 50px; /* Lebar kolom nomor */
+  text-align: center; /* Menyelaraskan nomor di tengah */
+}
+
+.data-daerah-table th:nth-child(2),
+.data-daerah-table td:nth-child(2) {
+  width: 300px; /* Lebar kolom Nama Daerah */
+}
+
+.data-daerah-table th:nth-child(3),
+.data-daerah-table td:nth-child(3) {
+  width: 150px; /* Lebar kolom Luas Wilayah */
+}
+
+.data-daerah-table th:nth-child(4),
+.data-daerah-table td:nth-child(4) {
+  width: 150px; /* Lebar kolom Populasi */
+}
+
+.data-daerah-table th:nth-child(5),
+.data-daerah-table td:nth-child(5) {
+  width: 100px; /* Lebar kolom Aksi */
+  text-align: center;
+}
+
+/* Style untuk form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+form input[type="text"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Style untuk tombol submit */
+form button {
+  display: inline-block;
+  width: 30%;
+  padding: 12px;
+  margin-left: 6rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #377837;
+}
+/* Tombol Cancel */
+.cancel-button {
+  text-align: center;
+  margin: auto;
+  background-color: #f44336; /* Warna merah */
+  width: 30%;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.cancel-button:hover {
+  background-color: #8e2727; /* Warna merah lebih gelap saat hover */
+}
+form button .cancel-button {
+  display: inline-block;
+}
+/* Style responsif untuk form */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  form input[type="text"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

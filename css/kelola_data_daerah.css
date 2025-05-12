@@ -1,0 +1,158 @@
+/* Style untuk container utama */
+* {
+  font-family: "Poppins", sans-serif;
+}
+.container_1 {
+  display: flex;
+  justify-content: space-between; /* Judul di kiri, tombol di kanan */
+  align-items: center; /* Vertikal tengah */
+  margin-top: 60px;
+}
+
+.container_1 h2 {
+  margin-left: 40rem;
+}
+
+.button-group1 {
+  margin-right: 20rem;
+  display: flex;
+  gap: 10px; /* Jarak antar tombol */
+}
+
+/* Tombol tambah data dan print */
+.tambah-button1,
+.print-button1 {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.tambah-button1:hover,
+.print-button1:hover {
+  background-color: #45a049;
+}
+
+/* Tabel data daerah */
+.data-daerah-table1 {
+  width: 60%; /* Tabel menggunakan seluruh lebar container */
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-daerah-table1 th,
+.data-daerah-table1 td {
+  padding: 10px 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.data-daerah-table1 th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.data-daerah-table1 td:nth-child(1) {
+  width: 1px; /* Kolom nomor */
+  text-align: center;
+}
+
+.data-daerah-table1 td:nth-child(2) {
+  width: 20px; /* Kolom nama daerah */
+}
+
+.data-daerah-table1 td:nth-child(3) {
+  width: 20px; /* Kolom luas wilayah */
+}
+
+.data-daerah-table1 td:nth-child(4) {
+  width: 80px; /* Kolom aksi */
+  text-align: center;
+}
+
+/*styl tombol aksi*/
+.edit-button,
+.delete-button {
+  background-color: #008cba;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+.edit-button {
+  background-color: #008cba;
+}
+
+.edit-button:hover {
+  background-color: #006e92;
+}
+.delete-button:hover {
+  background-color: #8e2727;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .container_1 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .container_1 h2 {
+    margin-left: 0;
+  }
+  .button-group1 {
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+
+  .data-daerah-table1 {
+    width: 100%; /* Ensure the table takes full width on mobile */
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .data-daerah-table1 th,
+  .data-daerah-table1 td {
+    padding: 5px; /* Reduce padding */
+  }
+
+  /* Adjust pagination for mobile */
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,157 @@
+/* Style untuk container utama */
+* {
+  font-family: "Poppins", sans-serif;
+}
+.container_2 {
+  display: flex;
+  justify-content: space-between; /* Judul di kiri, tombol di kanan */
+  align-items: center; /* Vertikal tengah */
+  margin-top: 60px;
+}
+
+.container_2 h2 {
+  margin-left: 40rem;
+}
+
+.button-group2 {
+  margin-right: 20rem;
+  display: flex;
+  gap: 10px; /* Jarak antar tombol */
+}
+
+/* Tombol tambah data dan print */
+.tambah-button2,
+.print-button2 {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.tambah-button2:hover,
+.print-button2:hover {
+  background-color: #45a049;
+}
+
+/* Tabel data jp */
+.data-panen-table {
+  width: 40%; /* Tabel menggunakan seluruh lebar container */
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-panen-table th,
+.data-panen-table td {
+  padding: 10px 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.data-panen-table th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.data-panen-table td:nth-child(1) {
+  width: 1px; /* Kolom nomor */
+  text-align: center;
+}
+
+.data-panen-table td:nth-child(2) {
+  width: 40px; /* Kolom nama jenis panen */
+}
+
+.data-panen-table td:nth-child(3) {
+  width: 40px; /* Kolom aksi */
+  text-align: center;
+}
+
+/* Style untuk tombol aksi */
+.edit-button,
+.delete-button {
+  background-color: #008cba;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.edit-button {
+  background-color: #008cba;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.edit-button:hover {
+  background-color: #006e92;
+}
+
+.delete-button:hover {
+  background-color: #8e2727;
+}
+
+/* Pagination style */
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  color: #333;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  transition: 0.3s ease;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/* Responsive style */
+@media screen and (max-width: 768px) {
+  .container_1 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .container_1 h2 {
+    margin-left: 0;
+  }
+  .button-group1 {
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+
+  .data-daerah-table {
+    width: 100%; /* Ensure the table takes full width on mobile */
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .data-daerah-table th,
+  .data-daerah-table td {
+    padding: 5px; /* Reduce padding */
+  }
+
+  /* Adjust pagination for mobile */
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

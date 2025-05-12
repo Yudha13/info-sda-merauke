@@ -1,0 +1,33 @@
+/* footer admin dashboard start */
+* {
+  font-family: "Poppins", sans-serif;
+}
+footer {
+  background-color: #878686;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100vw; /* Gunakan seluruh lebar viewport */
+  display: flex;
+  justify-content: space-between;
+  position: fixed; /* Footer tetap di bawah */
+  bottom: 0; /* Posisi di bagian bawah */
+  left: 0;
+  right: 0;
+  z-index: 0; /* Footer berada di belakang elemen dengan z-index lebih tinggi */
+}
+
+footer .credit {
+  text-align: left;
+  margin-left: 6rem; /* Jarak kiri */
+  color: #fff;
+  font-weight: 400;
+}
+
+footer .version {
+  text-align: right;
+  margin-right: 2rem; /* Jarak kanan */
+  color: #fff;
+  font-weight: 400;
+}
+
+/* footer end */

@@ -1,0 +1,257 @@
+/* Styles untuk halaman pencarian dan tabel hasil */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.search-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 130px auto 0px;
+  max-width: 800px;
+}
+.search-container h4 {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.judul-hasil-pencarian {
+  font-size: 20px;
+}
+.box_hp {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+}
+.search-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  flex: 1 1 45%;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.form-button:hover {
+  background-color: #218838;
+}
+
+.tabel-hasil-panen {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tabel-hasil-panen table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabel-hasil-panen th,
+.tabel-hasil-panen td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabel-hasil-panen th {
+  background-color: #f8f9fa;
+  color: #555;
+}
+
+.tabel-hasil-panen tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tabel-hasil-panen tr:hover {
+  background-color: #f1f1f1;
+}
+
+.print-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.print-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk peringkat potensi */
+#peringkat_potensi {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#peringkat_potensi h3 {
+  font-size: 20px;
+}
+
+#peringkat_potensi table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#peringkat_potensi th,
+#peringkat_potensi td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#peringkat_potensi th {
+  background-color: #f8f9fa;
+  color: #555;
+}
+
+#peringkat_potensi tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#peringkat_potensi tr:hover {
+  background-color: #f1f1f1;
+}
+
+#peringkat_potensi .print-button {
+  margin-top: 20px;
+  background-color: #ff6347;
+  font-size: 14px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+#peringkat_potensi .print-button:hover {
+  background-color: #e5533d;
+}
+
+/* tooltip */
+/* Tooltip container */
+.form-input {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.form-input:hover::after {
+  content: attr(title);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 14px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the tooltip text on hover */
+.form-input:hover::after {
+  opacity: 1;
+}
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center; /* Untuk memusatkan pagination */
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 8px 12px; /* Ruang di dalam tombol */
+  margin: 0 5px; /* Margin antar tombol */
+  border: 1px solid #007bff; /* Warna border tombol */
+  color: #007bff; /* Warna teks tombol */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  border-radius: 4px; /* Sudut yang melengkung */
+  transition: background-color 0.3s, color 0.3s; /* Transisi saat hover */
+}
+
+.pagination a.active {
+  background-color: #007bff; /* Warna latar belakang untuk tombol aktif */
+  color: white; /* Warna teks untuk tombol aktif */
+}
+
+.pagination a:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+  .pagination {
+    flex-direction: column; /* Mengubah arah menjadi kolom */
+    align-items: center; /* Memusatkan item di tengah */
+  }
+
+  .pagination a {
+    margin: 5px 0; /* Margin vertikal antar tombol */
+  }
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    flex: 1 1 100%;
+  }
+}

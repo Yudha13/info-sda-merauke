@@ -1,0 +1,128 @@
+/* General styling */
+body {
+  background-color: #f4f4f4;
+  margin: 20px;
+}
+
+h2,
+h3 {
+  color: #333;
+}
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button styling for links */
+a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  background-color: #f44336;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+a:hover {
+  background-color: #e53935;
+}
+
+a.edit {
+  background-color: #4caf50;
+}
+
+a.edit:hover {
+  background-color: #45a049;
+}
+
+/* Link for 'Tambah Admin' button */
+a.add-admin {
+  background-color: #2196f3;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+a.add-admin:hover {
+  background-color: #1976d2;
+}
+
+.edit-button,
+.delete-button {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: white;
+  margin-right: 10px;
+}
+
+.edit-button {
+  background-color: #4caf50; /* Hijau untuk Edit */
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #f44336; /* Merah untuk Hapus */
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}

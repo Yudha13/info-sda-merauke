@@ -1,0 +1,83 @@
+.sidebar-nav * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Sidebar dengan position fixed agar tetap berada di kiri meski scroll */
+.sidebar-nav {
+  position: fixed; /* Jadikan posisi sidebar tetap */
+  top: 0; /* Posisi dari atas */
+  left: 0; /* Posisi dari kiri */
+  bottom: 0; /* Penuhi hingga bagian bawah */
+  height: 100%; /* Sidebar memenuhi tinggi layar */
+  width: 65px; /* Lebar sidebar */
+  background: #878686;
+  overflow: hidden; /* Menghindari konten keluar dari sidebar */
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  z-index: 100; /* Agar sidebar tetap berada di atas konten */
+}
+
+.sidebar-nav .logo {
+  pointer-events: none;
+  text-align: center;
+  display: flex;
+  transition: all 1s ease;
+}
+
+.sidebar-nav .logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.sidebar-nav .logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.sidebar-nav a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  display: table;
+  width: 300px;
+  padding: 10px 0px;
+}
+
+.sidebar-nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidebar-nav .nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sidebar-nav a:hover {
+  background: #5c5c5c;
+}
+
+.sidebar-nav:hover {
+  width: 230px;
+  transition: all 1s ease;
+}
+
+.sidebar-nav .logout {
+  position: absolute;
+  bottom: 0;
+}

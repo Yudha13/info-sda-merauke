@@ -1,0 +1,30 @@
+/* Gaya untuk navigasi (navbar) */
+* {
+  font-family: "Poppins", sans-serif;
+}
+.headbar {
+  background-color: #878686; /* Warna latar belakang navbar */
+  padding: 15px; /* Jarak dalam di sekitar teks */
+  text-align: center; /* Pusatkan teks */
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; /* Menjaga agar navbar tetap di atas elemen lain jika diperlukan */
+}
+
+.headbar h1 {
+  color: white; /* Warna teks */
+  font-size: 24px; /* Ukuran font */
+  font-weight: bold; /* Teks tebal */
+  margin: 0; /* Hilangkan margin bawaan h1 */
+  font-family: "Arial", sans-serif; /* Jenis font */
+}
+
+/* Responsif: untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+  .headbar h1 {
+    font-size: 18px; /* Ukuran font lebih kecil untuk layar kecil */
+  }
+}
